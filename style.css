@@ -118,7 +118,7 @@ body {
 
 .logo h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;  /* Initial size of your company name */
+    font-size: 2em !important; /* Initial size of your company name */
     font-weight: bold;
     color: white; /* White color for the company name */
     text-shadow: 
