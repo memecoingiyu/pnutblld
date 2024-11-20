@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peanut </title>
+    <link rel="icon" href="save.webp" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Buttons Section: Positioned at the top -->
+        <div class="header-buttons">
+            <div class="left-buttons">
+                <a href="https://dexscreener.com/search?q=pnutblld">
+                    <img src="dexlogo.png" alt="Logo 1" class="logo-button">
+                </a>
+                <a href="https://t.me/pnutportal">
+                    <img src="Telegram_logo.svg.webp" alt="Logo 2" class="logo-button">
+                </a>
+                <a href="https://x.com/pnutsolana">
+                    <img src="xlogo.png" alt="Logo 3" class="logo-button">
+                </a>
+                
+            </div>
+            <div class="right-button">
+                <a href="https://dexscreener.com/search?q=pnutblld">
+                <button>Buy $PNUTBLLD</button></a>
+            </div>
+        </div>
+
+        <!-- Logo Section: Positioned below the buttons -->
+        <div class="logo">
+            <h1>Billion Dollar</h1>
+            <img src="peanut-11-2-2024 (5).webp" alt="Company Logo" class="company-logo">
+            <br><img src="SAVE PEANUT TRUMP VANCE MAKE AMERICA GREAT AGAIN! (600 x 200 px) (2000 x 2000 px) (2000 x .webp" alt="pict1" class="pict1">
+        </div>
+    </div>
+
+    <div class="picfund">
+        <img src="pntqq.webp" alt="picfund">
+        <div class="butonat12">
+            <button>NETWORK SOLANA</button>
+            <div class="button-group">
+                <button>CA RENOUNCED</button><br>
+                <button>LP : BURNT</button>
+            </div>
+            <button>Taxes 0% - SUPPLY. : 1.000.000.000</button>
+        </div>
+    </div>
+
+    <!-- Peanut falling animation container -->
+    <div class="falling-peanuts"></div>
+
+    <script>
+        // JavaScript to make peanuts fall every 2 seconds
+        const fallingPeanutsContainer = document.querySelector('.falling-peanuts');
+
+        function createFallingPeanut() {
+            // Create a new peanut element
+            const peanut = document.createElement('img');
+            peanut.src = 'puntttt.webp'; // Replace with your own peanut image path
+            peanut.classList.add('falling-peanut');
+
+            // Random position from left side of the screen
+            const randomLeft = Math.random() * 100;
+
+            // Add the peanut to the container
+            peanut.style.left = `${randomLeft}%`;
+            fallingPeanutsContainer.appendChild(peanut);
+
+            // Remove peanut once it has fallen out of view
+            setTimeout(() => {
+                peanut.remove();
+            }, 8000); // Remove after 5 seconds
+        }
+
+        // Create peanuts every 2 seconds
+        setInterval(createFallingPeanut, 2000);
+    </script>
+
+    <style>
+        .logo-button {
+            width: 50px; /* Adjust size as needed */
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .logo-button:hover {
+            opacity: 0.8; /* Hover effect */
+        }
+    </style>
+</body>
+</html>
