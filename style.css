@@ -90,7 +90,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.5em; /* Increase font size */
+    font-size: 1.2em; /* Increase font size */
     font-weight: bold; /* Set font to bold */
 }
 
@@ -104,7 +104,7 @@ body {
 
 .company-logo {
     width: 100%;  /* Ensure the logo scales to screen size */
-    max-width: 490px;  /* Max width to maintain original size on larger screens */
+    max-width: 460px;  /* Max width to maintain original size on larger screens */
     height: auto;   /* Keep the aspect ratio */
     margin-bottom: 20px;  /* Space between the image and the company name */
 }
