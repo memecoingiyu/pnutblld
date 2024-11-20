@@ -30,36 +30,31 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 5%;
     background-color: #244f84;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
 }
 
 .left-buttons {
     display: flex;
+    gap: 10px;
 }
 
 .left-buttons button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #346bae;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .left-buttons button:hover {
     background-color: #3164a2;
-}
-
-.left-logo {
-    display: flex;
-    align-items: center;
 }
 
 .left-logo img.rounded-logo {
@@ -75,21 +70,15 @@ body {
     transform: scale(1.1);
 }
 
-.right-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .right-button button {
     margin-left: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #f9f9f9;
-    color: rgb(13, 12, 12);
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -101,46 +90,38 @@ body {
     text-align: center;
 }
 
-.company-logo {
-    width: 490px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
+.company-logo,
 .pict1 {
-    width: 490px;
+    max-width: 90%;
     height: auto;
     margin-bottom: 20px;
 }
 
 .logo h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5em;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6),
-        -1px -1px 1px rgba(233, 147, 42, 0.912),
-        1px -1px 1px rgba(255, 165, 0, 0.8),
-        -1px 1px 1px rgba(255, 165, 0, 0.8),
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        -1px -1px 1px rgba(233, 147, 42, 0.912), 
+        1px -1px 1px rgba(255, 165, 0, 0.8), 
+        -1px 1px 1px rgba(255, 165, 0, 0.8), 
         1px 1px 1px rgba(255, 165, 0, 0.8);
     animation: shine 4s infinite, grow-shrink 6s infinite ease-in-out;
 }
 
 @keyframes grow-shrink {
-    0% {
-        font-size: 2em;
+    0%, 100% {
+        font-size: 2rem;
     }
     50% {
-        font-size: 5em;
-    }
-    100% {
-        font-size: 2em;
+        font-size: 3rem;
     }
 }
 
 @keyframes shine {
-    0% {
+    0%, 100% {
         text-shadow: 
             1px 1px 2px rgba(0, 0, 0, 0.6),
             -1px -1px 1px rgba(255, 165, 0, 0.8),
@@ -154,54 +135,39 @@ body {
             0 0 20px rgba(255, 255, 255, 0.8), 
             0 0 30px rgba(255, 165, 0, 1);
     }
-    100% {
-        text-shadow: 
-            1px 1px 2px rgba(0, 0, 0, 0.6),
-            -1px -1px 1px rgba(255, 165, 0, 0.8),
-            1px -1px 1px rgba(255, 165, 0, 0.8),
-            -1px 1px 1px rgba(255, 165, 0, 0.8),
-            1px 1px 1px rgba(255, 165, 0, 0.8);
-    }
 }
 
 .picfund {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
+    gap: 20px;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 
 .picfund img {
-    max-width: 70%;
+    max-width: 90%;
     height: auto;
-    display: block;
 }
 
 .butonat12 {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-self: flex-start;
-    margin-left: 20px;
-}
-
-.butonat12 .button-group {
-    display: flex;
-    gap: 15px;
+    align-items: center;
 }
 
 .butonat12 button {
-    padding: 15px 25px;
-    background-color: #fffbfb;
-    color: BLACK;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3.2em;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
@@ -215,61 +181,6 @@ body {
     transform: scale(0.98);
 }
 
-@media (max-width: 768px) {
-    .picfund {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .picfund img {
-        max-width: 100%;
-    }
-
-    .butonat12 {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .butonat12 .button-group {
-        flex-direction: column;
-    }
-
-    .header-buttons {
-        padding: 10px 10px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .left-buttons {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .left-buttons button {
-        margin: 5px 0;
-        width: 100%; /* Buttons take full width on smaller screens */
-        padding: 12px;
-    }
-
-    .right-button button {
-        margin-left: 0;
-        font-size: 1.2em; /* Adjust font size for better readability */
-    }
-
-    .logo h1 {
-        font-size: 3em; /* Make logo text smaller on mobile */
-    }
-
-    .company-logo {
-        width: 80%; /* Logo will be smaller on mobile */
-    }
-
-    .pict1 {
-        width: 80%;
-    }
-}
-
-/* Container for peanuts falling */
 .falling-peanuts {
     position: absolute;
     top: 0;
@@ -294,5 +205,21 @@ body {
     }
     100% {
         top: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .butonat12 button {
+        font-size: 1rem;
     }
 }
