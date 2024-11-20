@@ -6,12 +6,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 100vh; /* Make sure body takes up full screen height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Stack content vertically */
+    justify-content: flex-start;
     align-items: center;
-    background: url('userq.webp') no-repeat center center fixed; /* Background image */
+    background: url('userq.webp') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -19,11 +19,11 @@ body {
 .container {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Ensure the container takes up at least the full height of the screen */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center;
-    padding-top: 80px; /* Create space for header-buttons */
+    padding-top: 80px;
 }
 
 .header-buttons {
@@ -31,12 +31,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #244f84; /* Background for the header */
+    background-color: #244f84;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure buttons stay on top */
+    z-index: 1000;
 }
 
 .left-buttons {
@@ -57,23 +57,22 @@ body {
     background-color: #3164a2;
 }
 
-/* Style for the rounded logo */
 .left-logo {
     display: flex;
     align-items: center;
 }
 
 .left-logo img.rounded-logo {
-    width: 50px; /* Adjust the size of the logo */
-    height: 50px; /* Ensure it's a square */
-    border-radius: 50%; /* Make it round */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
-    border: 2px solid white; /* Optional border for the logo */
-    transition: transform 0.3s ease-in-out; /* Add a hover effect */
+    border: 2px solid white;
+    transition: transform 0.3s ease-in-out;
 }
 
 .left-logo img.rounded-logo:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1);
 }
 
 .right-button {
@@ -90,8 +89,8 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2em; /* Increase font size */
-    font-weight: bold; /* Set font to bold */
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .right-button button:hover {
@@ -103,47 +102,43 @@ body {
 }
 
 .company-logo {
-    width: 100%;  /* Ensure the logo scales to screen size */
-    max-width: 460px;  /* Max width to maintain original size on larger screens */
-    height: auto;   /* Keep the aspect ratio */
-    margin-bottom: 20px;  /* Space between the image and the company name */
+    width: 490px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .pict1 {
-    width: 100%;  /* Adjust the width of the logo image */
-    max-width: 470px;   /* Keep the logo's original width on large screens */
+    width: 490px;
     height: auto;
     margin-bottom: 20px;
 }
 
 .logo h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em !important; /* Initial size of your company name */
+    font-size: 5em;
     font-weight: bold;
-    color: white; /* White color for the company name */
+    color: white;
     text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6),    /* Shadow for outer text */
-        -1px -1px 1px rgba(233, 147, 42, 0.912), /* Orange line top-left */
-        1px -1px 1px rgba(255, 165, 0, 0.8),  /* Orange line top-right */
-        -1px 1px 1px rgba(255, 165, 0, 0.8),  /* Orange line bottom-left */
-        1px 1px 1px rgba(255, 165, 0, 0.8);   /* Orange line bottom-right */
-    animation: shine 4s infinite, grow-shrink 6s infinite ease-in-out; /* Apply animations */
+        1px 1px 2px rgba(0, 0, 0, 0.6),
+        -1px -1px 1px rgba(233, 147, 42, 0.912),
+        1px -1px 1px rgba(255, 165, 0, 0.8),
+        -1px 1px 1px rgba(255, 165, 0, 0.8),
+        1px 1px 1px rgba(255, 165, 0, 0.8);
+    animation: shine 4s infinite, grow-shrink 6s infinite ease-in-out;
 }
 
-/* Animation for text shrinking and growing */
 @keyframes grow-shrink {
     0% {
-        font-size: 2em;  /* Smallest size */
+        font-size: 2em;
     }
     50% {
-        font-size: 5em;  /* Largest size */
+        font-size: 5em;
     }
     100% {
-        font-size: 2em;  /* Smallest size again */
+        font-size: 2em;
     }
 }
 
-/* Optional: Add a glowing "shine" effect */
 @keyframes shine {
     0% {
         text-shadow: 
@@ -157,7 +152,7 @@ body {
         text-shadow: 
             0 0 10px rgba(255, 255, 255, 1), 
             0 0 20px rgba(255, 255, 255, 0.8), 
-            0 0 30px rgba(255, 165, 0, 1); /* Enhance the orange lines */
+            0 0 30px rgba(255, 165, 0, 1);
     }
     100% {
         text-shadow: 
@@ -171,32 +166,32 @@ body {
 
 .picfund {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh; /* Ensure the container takes full screen height */
-    padding: 20px; /* Optional: Adds padding around the section */
-    box-sizing: border-box; /* Prevents padding from causing overflow */
-    flex-wrap: wrap; /* Ensures content wraps on small screens */
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .picfund img {
-    max-width: 100%; /* Image takes up 100% of the container width on small screens */
+    max-width: 70%;
     height: auto;
     display: block;
 }
 
 .butonat12 {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 15px; /* Space between buttons */
-    align-self: flex-start; /* Aligns buttons to the top of the image */
-    margin-left: 20px; /* Adds space between the image and buttons */
+    flex-direction: column;
+    gap: 15px;
+    align-self: flex-start;
+    margin-left: 20px;
 }
 
 .butonat12 .button-group {
-    display: flex; /* Line up buttons 2 and 3 horizontally */
-    gap: 15px; /* Space between buttons 2 and 3 */
+    display: flex;
+    gap: 15px;
 }
 
 .butonat12 button {
@@ -204,56 +199,73 @@ body {
     background-color: #fffbfb;
     color: BLACK;
     border: none;
-    border-radius: 10px; /* Rounded corners for buttons */
+    border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3.2em;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transitions for hover */
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 .butonat12 button:hover {
-    background-color: #FFA500; /* Orange color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #FFA500;
+    transform: scale(1.05);
 }
 
 .butonat12 button:active {
-    transform: scale(0.98); /* Slightly shrink the button on click */
+    transform: scale(0.98);
 }
 
-/* Ensure buttons stay aligned when resizing */
 @media (max-width: 768px) {
-    .container {
-        padding-top: 120px; /* Increase padding on smaller screens to avoid overlap with fixed header */
-    }
-
     .picfund {
-        flex-direction: column; /* Stack the image and buttons vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
-
+    
     .picfund img {
-        max-width: 100%; /* Image takes up 100% of the container width on small screens */
+        max-width: 100%;
     }
 
     .butonat12 {
-        margin-left: 0; /* Remove margin when stacking vertically */
-        margin-top: 20px; /* Add space above the buttons */
-        text-align: center; /* Center buttons on mobile */
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .butonat12 .button-group {
-        flex-direction: column; /* Stack buttons 2 and 3 vertically on small screens */
-        align-items: center; /* Ensure buttons are centered */
-        gap: 20px; /* Increase space between stacked buttons */
+        flex-direction: column;
     }
 
-    .butonat12 button {
-        font-size: 2em; /* Reduce font size of buttons on small screens */
-        padding: 12px 20px; /* Adjust padding for better touch accessibility */
+    .header-buttons {
+        padding: 10px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .left-buttons button {
+        margin: 5px 0;
+        width: 100%; /* Buttons take full width on smaller screens */
+        padding: 12px;
+    }
+
+    .right-button button {
+        margin-left: 0;
+        font-size: 1.2em; /* Adjust font size for better readability */
     }
 
     .logo h1 {
-        font-size: 3em;  /* Smaller size for mobile screens */
+        font-size: 3em; /* Make logo text smaller on mobile */
+    }
+
+    .company-logo {
+        width: 80%; /* Logo will be smaller on mobile */
+    }
+
+    .pict1 {
+        width: 80%;
     }
 }
 
@@ -264,25 +276,23 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* So peanuts don't interfere with other elements */
-    z-index: 999; /* Ensure peanuts fall on top of other elements */
+    pointer-events: none;
+    z-index: 999;
 }
 
-/* Style for individual falling peanuts */
 .falling-peanut {
     position: absolute;
-    top: -50px; /* Start above the screen */
-    width: 30px; /* Adjust the size of the peanut */
+    top: -50px;
+    width: 30px;
     height: auto;
-    animation: fall 5s linear infinite; /* Animating the falling effect */
+    animation: fall 5s linear infinite;
 }
 
-/* Animation for the peanuts falling */
 @keyframes fall {
     0% {
-        top: -50px; /* Start from above the screen */
+        top: -50px;
     }
     100% {
-        top: 100vh; /* End at the bottom of the screen */
+        top: 100vh;
     }
 }
