@@ -219,22 +219,31 @@ body {
 }
 
 @media (max-width: 768px) {
-    .picfund {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .picfund img {
-        max-width: 100%;
+    .butonat12 {
+        margin-left: 0; /* Remove margin when stacking vertically */
+        margin-top: 20px;
+        width: 100%; /* Take full width on mobile */
+        align-items: center; /* Center buttons on mobile */
     }
 
-    .butonat12 {
-        margin-left: 0;
-        margin-top: 20px;
+    .butonat12 button {
+        font-size: 2em; /* Adjust font size for mobile */
+        padding: 12px 20px; /* Adjust padding for smaller screens */
+        width: 90%; /* Make buttons a bit smaller for better fit */
     }
 
     .butonat12 .button-group {
-        flex-direction: column;
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Ensure full width for the group */
+    }
+}
+
+/* Very small screen adjustments */
+@media (max-width: 480px) {
+    .butonat12 button {
+        font-size: 1.8em; /* Smaller font size for very small screens */
+        padding: 10px 18px; /* Adjust padding */
+        width: 100%; /* Ensure buttons fill the screen width */
     }
 }
 
